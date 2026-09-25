@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Full Name: Angelina T. Tenorio
+    Section: CS-201
+    Activity: Kape Ka Pa
+    Date: 08/20/26
+    -->
+    <title>☕ Kape Ka Pa</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <link rel="icon" sizes="192x192" href="img/logo.png">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Cafe Logo"/>
+            </a>
+        </header>
+ 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="coffeecart.html">Coffee Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use tha main area to add the main content on the webpage. -->
+        <main>
+            <div id="hero" class="tablet-desktop">
+                <img src="img/menu hero.jpg" alt="Cafe Hero Image">
+            </div>
+
+            <div class="mobile">
+                <h3>Kape Ka Pa</h3>
+                <p>Not just coffee.</p>
+                <p>Not just a place.</p>
+                <p>But a space where conversations stay longer, laughter feels lighter, and every cup carries comfort.</p>
+                <p>At Kape Ka Pa, we brew more than drinks we brew moments worth coming back to.</p>
+                <p>From your first sip to your late-night stories, thank you for making us part of your everyday vibe.</p>
+            </div>
+
+            <div class="tablet-desktop">
+                <table> <!-- Start Table -->
+                    <caption>MENU</caption>
+                    <tr> <!-- Row 1 -->
+                        <th>Category</th>
+                        <th>Item Name</th>
+                        <th>Price (PHP)</th>
+                        <th>Size</th>
+                    </tr>
+                    <tr> <!-- Row 2 -->
+                        <td>Coffee Based</td>
+                        <td>Spanish Latte</td>
+                        <td>119 / 129</td>
+                        <td>12oz / 16oz</td>
+                    </tr>
+                    <tr> <!-- Row 3 -->
+                        <td>Almond Series</td>
+                        <td>Creamy Vanilla Almond</td>
+                        <td>149</td>
+                        <td>Standard</td>
+                    </tr>
+                    <tr> <!-- Row 4 -->
+                        <td>Tiramisu Series</td>
+                        <td>Matcha</td>
+                        <td>189</td>
+                        <td>Standard</td>
+                    </tr>
+                    <tr> <!-- Row 5 -->
+                        <td>KKP Signature</td>
+                        <td>Kape Ka Pa Signature</td>
+                        <td>139</td>
+                        <td>Standard</td>
+                    </tr>
+                    <tr> <!-- Row 6 -->
+                        <td>Rice Meals</td>
+                        <td>Bagnet Silog</td>
+                        <td>149</td>
+                        <td>Meal</td>
+                    </tr>
+                    <tr> <!-- Row 7 -->
+                        <td>Food</td>
+                        <td>Clubhouse Sandwich (with a side of fries)</td>
+                        <td>119</td>
+                        <td>Meal</td>
+                    </tr>
+                </table> <!-- End Table -->
+            </div>
+
+            <div id="form">
+                <h2>FEEDBACK AND INQUIRIES</h2>
+                <form class="form-grid"> <!-- Start Form -->
+                    <fieldset>
+                        <legend>PERSONAL INFORMATION</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required>
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" id="lName" name="lName" required>
+
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>MENU PREFERENCES</legend>
+                        <p>Select your favorite categories:</p>
+
+                        <label for="coffee"><input type="checkbox" name="interest" id="coffee" value="Coffee Based">
+                        Coffee Based</label>
+
+                        <label for="special"><input type="checkbox" name="interest" id="special" value="Specialty Series">
+                        Specialty Series</label>
+
+                        <label for="meals"><input type="checkbox" name="interest" id="meals" value="Rice Meals">
+                        Rice Meals</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>ADDITIONAL DETAILS</legend>
+                        <label for="reference">How did you find us?</label>
+                        <select name="reference" id="reference">
+                            <option value="ad">Advertisement</option>
+                            <option value="socmed">Social Media</option>
+                            <option value="friend">Friend / Relatives</option>
+                            <option value="walkin">Walk-in</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="questions">Questions?</label>
+                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="submit" class="btn">
+                </form> <!-- End Form -->
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Kape Ka Pa. All Rights Reserved. Website designed
+            by Angelina Tenorio.
+            <br><a href="tel:+639692046792">www.KapeKaPa.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
